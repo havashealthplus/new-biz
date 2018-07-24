@@ -1,0 +1,230 @@
+/* general */
+@-ms-viewport {
+  width: device-width;
+}
+
+html {
+  box-sizing: border-box;
+  -ms-overflow-style: scrollbar;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+  font-family: 'Arial';
+  src: url('webfonts/Arial-BoldMT.eot');
+  src: url('webfonts/Arial-BoldMT.eot?#iefix') format('embedded-opentype'),
+       url('webfonts/Arial-BoldMT.woff2') format('woff2'),
+       url('webfonts/Arial-BoldMT.woff') format('woff'),
+       url('webfonts/Arial-BoldMT.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Rokkitt-ExtraLight';
+  src: url('webfonts/Rokkitt-ExtraLight.eot');
+  src: url('webfonts/Rokkitt-ExtraLight.woff2') format('woff2'),
+       url('webfonts/Rokkitt-ExtraLight.woff') format('woff'),
+       url('webfonts/Rokkitt-ExtraLight.ttf') format('truetype'),
+       url('webfonts/Rokkitt-ExtraLight.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Rokkitt-Light';
+  src: url('webfonts/Rokkitt-Light.eot');
+  src: url('webfonts/Rokkitt-Light.woff2') format('woff2'),
+       url('webfonts/Rokkitt-Light.woff') format('woff'),
+       url('webfonts/Rokkitt-Light.ttf') format('truetype'),
+       url('webfonts/Rokkitt-Light.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: 'Rokkitt-ExtraLight', serif;
+  font-size: 62.5%;
+  font-weight: 300;
+  font-style: normal;
+  color: #0d0d0d;
+}
+
+h1, h2, h3,
+h4, h5, h6,
+p, span, li, a {
+  font-style: normal;
+  font-weight: 300;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+     -moz-font-smoothing: antialiased;
+       -o-font-smoothing: antialiased;
+}
+
+a, a:hover, a:visited {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+}
+
+.container {
+  width: 100%;
+  padding-right: 30px;
+  padding-left: 30px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@media (min-width: 576px) {
+  .container {
+    padding-right: 30px;
+    padding-left: 30px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    padding-right: 50px;
+    padding-left: 50px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    padding-right: 50px;
+    padding-left: 50px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    padding-right: 100px;
+    padding-left: 100px;
+  }
+}
+
+.row {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
+/* header */
+#site-header {
+  position: relative;
+  padding: 7.5rem 0;
+  text-align: center;
+}
+
+.logo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+/* intro */
+.page-title {
+  padding-bottom: 5rem;
+  font-family: 'Arial';
+  font-size: 3rem;
+  letter-spacing: -0.1rem;
+  text-align: center;
+}
+
+@media (min-width: 992px) {
+  .page-title {
+    font-size: 4rem;
+    letter-spacing: -0.15rem;
+  }
+}
+
+
+/* assets */
+#assets {
+  display: -ms-flex;
+  display: -webkit-flex;
+  display: flex;
+}
+
+.collection {
+  height: auto;
+  width: 100%;
+  margin-bottom: 3rem;
+  margin-left: 2.5%;
+  margin-right: 2.5%;
+  padding: 2.5rem;
+  border: 1px solid rgba(13,13,13,.2);
+  border-radius: 5px;
+  text-align: center;
+}
+
+.collection-title {
+  padding-bottom: 1.5rem;
+  font-family: 'Arial';
+  font-size: 2.5rem;
+  letter-spacing: -0.1rem;
+}
+
+.collection-desc {
+  padding-bottom: 1.5rem;
+  font-family: 'Rokkitt-ExtraLight';
+  font-size: 1.8rem;
+}
+
+@media screen and (min-width: 768px) {
+  .collection {
+    width: calc((100% - 5% * 3) / 3);
+  }
+}
+
+.button {
+  display: block;
+  position: relative;
+}
+
+.button span {
+  display: block;
+  max-width: 15rem;
+  margin: auto auto;
+  padding: 1.5rem;
+  background: #f33333;
+  font-size: 1.8rem;
+  color: #ffffff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
