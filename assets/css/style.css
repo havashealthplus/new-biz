@@ -74,7 +74,6 @@ p, span, li, a {
 }
 
 a, a:hover, a:visited {
-  display: block;
   text-decoration: none;
   color: inherit;
 }
@@ -115,15 +114,6 @@ a, a:hover, a:visited {
   }
 }
 
-.row {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  margin-right: -15px;
-  margin-left: -15px;
-}
-
 /* header */
 #site-header {
   position: relative;
@@ -154,24 +144,25 @@ a, a:hover, a:visited {
   }
 }
 
-
-/* assets */
-#assets {
-  display: -ms-flex;
-  display: -webkit-flex;
-  display: flex;
-}
-
 .collection {
-  height: auto;
-  width: 100%;
+  height: 22.5rem;
   margin-bottom: 3rem;
-  margin-left: 2.5%;
-  margin-right: 2.5%;
   padding: 2.5rem;
   border: 1px solid rgba(13,13,13,.2);
   border-radius: 5px;
   text-align: center;
+}
+
+@media (min-width: 768px) {
+  .collection {
+    height: 30rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .collection {
+    height: 22.5rem;
+  }
 }
 
 .collection-title {
@@ -187,31 +178,22 @@ a, a:hover, a:visited {
   font-size: 1.8rem;
 }
 
-@media screen and (min-width: 768px) {
-  .collection {
-    width: calc((100% - 5% * 3) / 3);
-  }
-}
-
 .button {
-  display: block;
-  position: relative;
+  position: absolute;
+  width: 100%;
+  left: 0;
+  bottom: 7.5rem;
+  font-size: 1.8rem;
 }
 
 .button span {
-  display: block;
-  max-width: 15rem;
+  width: 100%;
   margin: auto auto;
-  padding: 1.5rem;
-  background: #f33333;
-  font-size: 1.8rem;
-  color: #ffffff;
+  text-align: center;
+  padding: 1.5rem 2.5rem;
+  color: #fff;
+  background: #f33;
 }
-
-
-
-
-
 
 
 
